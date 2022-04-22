@@ -84,13 +84,11 @@ def main_apv():
         print (logo)
         print ('')
         print ("Trun On Data An Then \t")
-        print("")
     except:
         print ('\x1b[1;91mToken on Checkpiont ')
         os.system('rm -rf token.txt')
     os.system('clear')
     print (logo)
-    
     print (39*'~')
     print ("\x1b[1;93m[1]   Public Cloning      \x1b[1;92m(Login)")
     print ("\x1b[1;91m[2]   Random Cloning     \x1b[1;92m (No Login)")
@@ -106,30 +104,21 @@ def main_apv():
 def main_input():
     mx=input('\x1b[1;92m[!] Select : ')
     if mx=='1':
-        
         print('\033[1;94m Cheking Subscription ....\033[1;92m')
         time.sleep(3)
         fb_menu()
     elif mx=='2':
-        
         print('\033[1;94m Cheking Subscription ....\033[1;97m')
         time.sleep(3)
         numcloning()
     elif mx=='3':
-        
         os.system ('clear')
-        
-        
-        
         print ("        [ File Cloning ]")
-        
         print (" [ cloning with pass or name + pass ]")
-        
         print ("[1] Cloning With Choice Pass")
         print ("[2] Cloning With Name + Pass")
         print ("[3] Cloning With Auto Pass")
         print ("[0] Back")
-        
         c=input("[!] Select : ")
         if c=='1':
             f_p_pass()
@@ -140,17 +129,12 @@ def main_input():
         else:
             main()
     elif mx=='4':
-        
         print('\033[1;94m Cheking Subscription ....\033[1;97m')
         time.sleep(3)
         grap()
     elif mx=='5':
         os.system ('clear')
         print (logo)
-        
-        
-        
-        
         print ("        Congratulations Bro Your Pro")
         print ("        Member In RK Paid Commands ")
         print ("        ENJOY  KRO BHI (logo) ")
@@ -163,21 +147,15 @@ def main_input():
         os.system("rm -rf fixed")
         time.sleep(5)
         mx("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
-        time.sleep(2)
-			
-			
+        time.sleep(2)	
     elif mx=='7':
         os.system("xdg-open https://wa.me/+923188214452")
         time.sleep(3)
         main()
-        
-        
     else:
         print ('invild option')
         time.sleep(2)
         main()
-
-
 def numcloning():
     if dec in server:
         pass
@@ -188,13 +166,9 @@ def numcloning():
     oks=[]
     os.system ("clear")
     print (logo)
-    
     print ("    \033[1;91m\n[ Pakistan Random Number Cloning ]")
-    
-    
     print ('\033[1;92m\n   [*] Enter First 4 Latter Of Any Network : ')
     print ("\033[1;93m\n     Example 0300  0345 0320 0303 ")
-    
     coc=input ('\033[1;95m\nChoice Code :\033[1;93m ')
     try:
         list = '.txt'
