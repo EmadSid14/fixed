@@ -104,7 +104,7 @@ def main_apv():
     print (43*'~')
     main_input()
 def main_input():
-    mx=eval(input('\x1b[1;92m[!] Select : '))
+    mx=(input('\x1b[1;92m[!] Select : '))
     print ("")
     if mx=='1':
         print ("")
