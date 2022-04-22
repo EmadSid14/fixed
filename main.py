@@ -1,6 +1,6 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2022-03-12 17:47:35.910329
-from importlib import reload
+from imp import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
 from xml.dom import NotFoundErr
 from site import main
@@ -30,7 +30,7 @@ sm='\x1b[1;96m'
 try:
     import lolcat
 except:
-    os.system('pip install lolcat')
+    os.system('pip2 install lolcat')
 logo="""                                                                                                                                                                                                     
                                                        bbbbbbbb           bbbbbbbb                                                                                                               dddddddd
    SSSSSSSSSSSSSSS      tttt                           b::::::b           b::::::b                                                                           SSSSSSSSSSSSSSS   iiii              d::::::d
@@ -104,16 +104,16 @@ def main_apv():
     print (43*'~')
     main_input()
 def main_input():
-    mx=input('\x1b[1;92m[!] Select : ')
+    mx=eval(input('\x1b[1;92m[!] Select : '))
     print ("")
     if mx=='1':
         print ("")
-        print('\033[1;94m Cheking Subscription ....\033[1;92m')
+        print('\033[1;94m Checking Subscription ....\033[1;92m')
         time.sleep(3)
         fb_menu()
     elif mx=='2':
         print ("")
-        print('\033[1;94m Cheking Subscription ....\033[1;97m')
+        print('\033[1;94m Checking Subscription ....\033[1;97m')
         time.sleep(3)
         numcloning()
     elif mx=='3':
@@ -131,7 +131,7 @@ def main_input():
         print ("[3] Cloning With Auto Pass")
         print ("[0] Back")
         print ("")
-        c=input("[!] Select : ")
+        c=eval(input("[!] Select : "))
         if c=='1':
             f_p_pass()
         elif c=='2':
@@ -196,7 +196,7 @@ def numcloning():
     print ('\033[1;92m\n   [*] Enter First 4 Digits Of Any Network : ')
     print ("\033[1;93m\n     Example 0300 0345 0320 0303 ")
     print ("")
-    coc=input ('\033[1;95m\nChoice Code :\033[1;93m ')
+    coc=eval(input ('\033[1;95m\nChoice Code :\033[1;93m '))
     try:
         list = '.txt'
         for li in open(list, 'r').readlines():
@@ -272,13 +272,13 @@ def fb_menu():
         print ("\033[1;92m\n[1] Login With Token")
         print ("\033[1;93m\n[0] Back")
         print (39*'-')
-        pp=input('\033[1;94m\nSelect :\033[1;91m ')
+        pp=eval(input('\033[1;94m\nSelect :\033[1;91m '))
         if pp=='1':
             os.system('clear')
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
+            tok=eval(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
             j=open('token.txt','w')
             j.write(tok)
             j.close()
@@ -316,7 +316,7 @@ def fb_menu():
     
     print ("\033[1;91m[0] Back ")
     print (39*'-')
-    cz=input('[!] Select : ')
+    cz=eval(input('[!] Select : '))
     if cz=="1":
         print ("")
         print ("\033[1;91m      [ Public Cloning Pro ]")
@@ -327,7 +327,7 @@ def fb_menu():
         print ("\033[1;92m[2] Cloning with name + pass")
         print ("\033[1;91m[0] Back")
         print ("")
-        c=input("[!] Select : ")
+        c=eval(input("[!] Select : "))
         if c=='1':
             p_p_pass()
         elif c=='2':
@@ -345,7 +345,7 @@ def fb_menu():
         print ("\033[1;92m[3] Cloning With Auto Pass")
         print ("\033[1;91m[0] Back")
         print ("")
-        vv=input("\033[1;95m[!] Select :\033[1;92m ")
+        vv=eval(input("\033[1;95m[!] Select :\033[1;92m "))
         if vv=="1":
             xokp()
         elif vv=="2":
@@ -363,7 +363,7 @@ def fb_menu():
         print ("")
         print ("\t  [ Maximum Limit 10 IDs ]")
         print ("")
-        c=input("[!] How Many Links Do You Want To Dump : ")
+        c=int(input("[!] How Many Links Do You Want To Dump : "))
         if c=='1':
             ext1()
         elif c=='2':
@@ -403,7 +403,7 @@ def mineExt():
     os.system('clear')
     print (logo)
     print ("")
-    iiid=input("[=] Enter ID : ")
+    iiid=int(input("[=] Enter ID : "))
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
     nid=q ['name']
@@ -673,7 +673,7 @@ def mineExt():
     print ("")
     print (sm+"[=] Total Extract ids : "+str(len(count))+w)
     print ("")
-    mvt=input("[=] Enter Path To Save File : ")
+    mvt=eval(input("[=] Enter Path To Save File : "))
     print ("[=] Your File Save in : "+mvt)
     shutil.move(hok,mvt)
     os.system('rm -rf jok.txt')
@@ -696,7 +696,7 @@ def xokpauto():
     os.system('clear')
     print (logo)
     print ("")
-    iiid=input("[=] Enter ID : ")
+    iiid=int(input("[=] Enter ID : "))
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
     nid=q ['name']
@@ -1110,12 +1110,12 @@ def xokp():
     os.system('clear')
     print (logo)
     print ("")
-    iiid=input("[1] Enter ID : ")
+    iiid=int(input("[1] Enter ID : "))
     print ("")
-    ps1=input('[1] Password : ')
-    ps2=input('[2] Password : ')
-    ps3=input('[3] Password : ')
-    ps4=input('[4] Password : ')
+    ps1=eval(input('[1] Password : '))
+    ps2=eval(input('[2] Password : '))
+    ps3=eval(input('[3] Password : '))
+    ps4=eval(input('[4] Password : '))
     print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -1539,12 +1539,12 @@ def xokp():
     os.system('clear')
     print (logo)
     print ("")
-    iiid=input("[=] Enter ID : ")
+    iiid=int(input("[=] Enter ID : "))
     print ("")
-    ps1=input('[1] Password : ')
-    ps2=input('[2] Password : ')
-    ps3=input('[3] Password : ')
-    ps4=input('[4] Password : ')
+    ps1=eval(input('[1] Password : '))
+    ps2=eval(input('[2] Password : '))
+    ps3=eval(input('[3] Password : '))
+    ps4=eval(input('[4] Password : '))
     print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -1965,12 +1965,12 @@ def xoknp():
     os.system('clear')
     print (logo)
     print ("")
-    iiid=input("[1] Enter ID : ")
+    iiid=int(input("[1] Enter ID : "))
     print ("")
-    ps1=input('[1] name + digit : ')
-    ps2=input('[2] name + digit : ')
-    ps3=input('[3] name + digit : ')
-    ps4=input('[4] last + name  : ')
+    ps1=eval(input('[1] name + digit : '))
+    ps2=eval(input('[2] name + digit : '))
+    ps3=eval(input('[3] name + digit : '))
+    ps4=eval(input('[4] last + name  : '))
     print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -2423,64 +2423,64 @@ def n_p_pass():
     print ("")
     print (" [ Maximum Limit 5 ]")
     print ("")
-    ty=input('[!] How Many Pass Do You Want To Add : ')
+    ty=int(input('[!] How Many Pass Do You Want To Add : '))
     if ty=="1":
         print ("")
-        ps1=input("[1] Enter digit : ")
+        ps1=int(input("[1] Enter digit : "))
         pass
     elif ty=="2":
-        ps1=input("[1] Enter digit : ")
-        ps2=input("[2] Enter digit : ")
+        ps1=int(input("[1] Enter digit : "))
+        ps2=int(input("[2] Enter digit : "))
         pass
     elif ty=="3":
-        ps1=input("[1] Enter digit : ")
-        ps2=input("[2] Enter digit : ")
-        ps3=input("[3] Enter digit : ")
+        ps1=int(input("[1] Enter digit : "))
+        ps2=int(input("[2] Enter digit : "))
+        ps3=int(input("[3] Enter digit : "))
         pass
     elif ty=="4":
-        ps1=input("[1] Enter digit : ")
-        ps2=input("[2] Enter digit : ")
-        ps3=input("[3] Enter digit : ")
-        ps4=input("[4] Enter digit : ")
+        ps1=int(input("[1] Enter digit : "))
+        ps2=int(input("[2] Enter digit : "))
+        ps3=int(input("[3] Enter digit : "))
+        ps4=int(input("[4] Enter digit : "))
         pass
     elif ty=="5":
-        ps1=input("[1] Enter digit : ")
-        ps2=input("[2] Enter digit : ")
-        ps3=input("[3] Enter digit : ")
-        ps4=input("[4] Enter digit : ")
-        ps5=input("[5] Enter digit : ")
+        ps1=int(input("[1] Enter digit : "))
+        ps2=int(input("[2] Enter digit : "))
+        ps3=int(input("[3] Enter digit : "))
+        ps4=int(input("[4] Enter digit : "))
+        ps5=int(input("[5] Enter digit : "))
     
   
     print ("")
     print (" [ Maximum Limit 5 ]")
     print ("")
-    ty=input('[!] How Many Links Do You Want To Clone: ')
+    ty=int(input('[!] How Many Links Do You Want To Clone: '))
     print ("")
     if ty=="1":
         print ("")
-        idt=input("[1] Enter ID : ")
+        idt=int(input("[1] Enter ID : "))
         pass
     elif ty=="2":
-        idt=input("[1] Enter ID : ")
-        id2=input("[2] Enter ID : ")
+        idt=int(input("[1] Enter ID : "))
+        id2=int(input("[2] Enter ID : "))
         pass
     elif ty=="3":
-        idt=input("[1] Enter ID : ")
-        id2=input("[2] Enter ID : ")
-        id3=input("[3] Enter ID : ")
+        idt=int(input("[1] Enter ID : "))
+        id2=int(input("[2] Enter ID : "))
+        id3=int(input("[3] Enter ID : "))
         pass
     elif ty=="4":
-        idt=input("[1] Enter ID : ")
-        id2=input("[2] Enter ID : ")
-        id3=input("[3] Enter ID : ")
-        id4=input("[4] Enter ID : ")
+        idt=int(input("[1] Enter ID : "))
+        id2=int(input("[2] Enter ID : "))
+        id3=int(input("[3] Enter ID : "))
+        id4=int(input("[4] Enter ID : "))
         pass
     elif ty=="5":
-        idt=input("[1] Enter ID : ")
-        id2=input("[2] Enter ID : ")
-        id3=input("[3] Enter ID : ")
-        id4=input("[4] Enter ID : ")
-        id5=input("[5] Enter ID : ")
+        idt=int(input("[1] Enter ID : "))
+        id2=int(input("[2] Enter ID : "))
+        id3=int(input("[3] Enter ID : "))
+        id4=int(input("[4] Enter ID : "))
+        id5=int(input("[5] Enter ID : "))
     else:
         print ("invlid option")
         time.sleep(2)
@@ -2644,10 +2644,10 @@ def n_p_pass():
     os.system('clear')
     print (logo)
     print ("")
-    ps1=input('[1] name + digit : ')
-    ps2=input('[2] name + digit : ')
-    ps3=input('[4] name + digit : ')
-    ps4=input('[4] Last + Name  : ')
+    ps1=eval(input('[1] name + digit : '))
+    ps2=eval(input('[2] name + digit : '))
+    ps3=eval(input('[4] name + digit : '))
+    ps4=eval(input('[4] Last + Name  : '))
 
 
 
@@ -2662,14 +2662,14 @@ def p_p_pass():
     print ("")
     print (" [ Maximum Limit 5 ]")
     print ("")
-    ty=input('[!] How Many Pass Do You Want To Add: ')
+    ty=int(input('[!] How Many Pass Do You Want To Add: '))
     print ("")
     if ty=="1":
         print ("")
-        ps1=input("[1] Enter Pass : ")
+        ps1=eval(input("[1] Enter Pass : "))
         pass
     elif ty=="2":
-        ps1=input("[1] Enter Pass : ")
+        ps1=eval(input("[1] Enter Pass : "))
         ps1=input("[2] Enter Pass : ")
         pass
     elif ty=="3":
@@ -3190,7 +3190,7 @@ def ext1():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
         
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3202,7 +3202,7 @@ def ext1():
         fuck.write(uid + '|' + na + '\n')
         
     fuck.close()
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print (' [*] Your File Save In : '+cop)
     input('[!] Press Enter To Back')
@@ -3215,8 +3215,8 @@ def ext2():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
         
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3237,7 +3237,7 @@ def ext2():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3250,9 +3250,9 @@ def ext3():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
         
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3282,7 +3282,7 @@ def ext3():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3295,10 +3295,10 @@ def ext4():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
     fuck=open(file,'a')
@@ -3336,7 +3336,7 @@ def ext4():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[*] File path : ')
+    cop=eval(input('[*] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3349,11 +3349,11 @@ def ext5():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
     fuck=open(file,'a')
@@ -3400,7 +3400,7 @@ def ext5():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3413,12 +3413,12 @@ def ext6():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
-    d6=input('[6] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
+    d6=int(input('[6] Enter ID : '))
     
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3475,7 +3475,7 @@ def ext6():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=int(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3488,13 +3488,13 @@ def ext7():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
-    d6=input('[6] Enter ID : ')
-    d7=input('[7] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
+    d6=int(input('[6] Enter ID : '))
+    d7=int(input('[7] Enter ID : '))
     
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3560,7 +3560,7 @@ def ext7():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=int(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3573,14 +3573,14 @@ def ext8():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
-    d6=input('[6] Enter ID : ')
-    d7=input('[7] Enter ID : ')
-    d8=input('[8] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
+    d6=int(input('[6] Enter ID : '))
+    d7=int(input('[7] Enter ID : '))
+    d8=int(input('[8] Enter ID : '))
     
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3655,7 +3655,7 @@ def ext8():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=int(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3668,15 +3668,15 @@ def ext9():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
-    d6=input('[6] Enter ID : ')
-    d7=input('[7] Enter ID : ')
-    d8=input('[8] Enter ID : ')
-    d9=input('[8] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
+    d6=int(input('[6] Enter ID : '))
+    d7=int(input('[7] Enter ID : '))
+    d8=int(input('[8] Enter ID : '))
+    d9=int(input('[8] Enter ID : '))
     
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3760,7 +3760,7 @@ def ext9():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3773,16 +3773,16 @@ def ext10():
     except:
         main()
     print ("")
-    d1=input('[1] Enter ID : ')
-    d2=input('[2] Enter ID : ')
-    d3=input('[3] Enter ID : ')
-    d4=input('[4] Enter ID : ')
-    d5=input('[5] Enter ID : ')
-    d6=input('[6] Enter ID : ')
-    d7=input('[7] Enter ID : ')
-    d8=input('[8] Enter ID : ')
-    d9=input('[8] Enter ID : ')
-    d10=input('[10] Enter ID : ')
+    d1=int(input('[1] Enter ID : '))
+    d2=int(input('[2] Enter ID : '))
+    d3=int(input('[3] Enter ID : '))
+    d4=int(input('[4] Enter ID : '))
+    d5=int(input('[5] Enter ID : '))
+    d6=int(input('[6] Enter ID : '))
+    d7=int(input('[7] Enter ID : '))
+    d8=int(input('[8] Enter ID : '))
+    d9=int(input('[8] Enter ID : '))
+    d10=int(input('[10] Enter ID : '))
     
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
     z = json.loads(r.text)
@@ -3875,7 +3875,7 @@ def ext10():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=input('[!] File path : ')
+    cop=eval(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3891,7 +3891,7 @@ def fileauto():
     print ("")
     print ("")
     try:
-        mf=input('[!] Enter path : ')
+        mf=eval(input('[!] Enter path : '))
         print ('')
         for line in open(mf,'r').readlines():
             idx.append(line.strip())
@@ -4039,13 +4039,13 @@ def n_f_p_pass():
     os.system('clear')
     print (logo)
     print ("")
-    ps1=input('[1] name + digit : ')
-    ps2=input('[2] name + digit : ')
-    ps3=input('[3] name + digit : ')
-    ps4=input('[4] name + digit : ')
+    ps1=eval(input('[1] name + digit : '))
+    ps2=eval(input('[2] name + digit : '))
+    ps3=eval(input('[3] name + digit : '))
+    ps4=eval(input('[4] name + digit : '))
     print ("")
     try:
-        mf=input('[!] Enter path : ')
+        mf=eval(input('[!] Enter path : '))
         print ('')
         for line in open(mf,'r').readlines():
             idx.append(line.strip())
@@ -4193,15 +4193,15 @@ def f_p_pass():
     os.system('clear')
     print (logo)
     print ("")
-    ps1=input('[1] Password : ')
-    ps2=input('[2] Password : ')
-    ps3=input('[3] Password : ')
-    ps4=input('[4] Password : ')
-    ps5=input('[5] Password : ')
-    ps6=input('[6] Password : ')
+    ps1=eval(input('[1] Password : '))
+    ps2=eval(input('[2] Password : '))
+    ps3=eval(input('[3] Password : '))
+    ps4=eval(input('[4] Password : '))
+    ps5=eval(input('[5] Password : '))
+    ps6=eval(input('[6] Password : '))
     print ("")
     try:
-        mf=input('[!] Enter path :')
+        mf=eval(input('[!] Enter path :'))
         print ('')
         for line in open(mf,'r').readlines():
             idx.append(line.strip())
