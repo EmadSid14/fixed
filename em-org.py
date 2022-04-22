@@ -32,6 +32,33 @@ try:
 except:
     os.system('pip2 install lolcat')
 logo="""
+
+                                                                                                                                                                                                         
+                                                       bbbbbbbb           bbbbbbbb                                                                                                               dddddddd
+   SSSSSSSSSSSSSSS      tttt                           b::::::b           b::::::b                                                                           SSSSSSSSSSSSSSS   iiii              d::::::d
+ SS:::::::::::::::S  ttt:::t                           b::::::b           b::::::b                                                                         SS:::::::::::::::S i::::i             d::::::d
+S:::::SSSSSS::::::S  t:::::t                           b::::::b           b::::::b                                                                        S:::::SSSSSS::::::S  iiii              d::::::d
+S:::::S     SSSSSSS  t:::::t                            b:::::b            b:::::b                                                                        S:::::S     SSSSSSS                    d:::::d 
+S:::::S        ttttttt:::::ttttttt    uuuuuu    uuuuuu  b:::::bbbbbbbbb    b:::::bbbbbbbbb       ooooooooooo   rrrrr   rrrrrrrrr   nnnn  nnnnnnnn         S:::::S            iiiiiii     ddddddddd:::::d 
+S:::::S        t:::::::::::::::::t    u::::u    u::::u  b::::::::::::::bb  b::::::::::::::bb   oo:::::::::::oo r::::rrr:::::::::r  n:::nn::::::::nn       S:::::S            i:::::i   dd::::::::::::::d 
+ S::::SSSS     t:::::::::::::::::t    u::::u    u::::u  b::::::::::::::::b b::::::::::::::::b o:::::::::::::::or:::::::::::::::::r n::::::::::::::nn       S::::SSSS          i::::i  d::::::::::::::::d 
+  SS::::::SSSSStttttt:::::::tttttt    u::::u    u::::u  b:::::bbbbb:::::::bb:::::bbbbb:::::::bo:::::ooooo:::::orr::::::rrrrr::::::rnn:::::::::::::::n       SS::::::SSSSS     i::::i d:::::::ddddd:::::d 
+    SSS::::::::SS    t:::::t          u::::u    u::::u  b:::::b    b::::::bb:::::b    b::::::bo::::o     o::::o r:::::r     r:::::r  n:::::nnnn:::::n         SSS::::::::SS   i::::i d::::::d    d:::::d 
+       SSSSSS::::S   t:::::t          u::::u    u::::u  b:::::b     b:::::bb:::::b     b:::::bo::::o     o::::o r:::::r     rrrrrrr  n::::n    n::::n            SSSSSS::::S  i::::i d:::::d     d:::::d 
+            S:::::S  t:::::t          u::::u    u::::u  b:::::b     b:::::bb:::::b     b:::::bo::::o     o::::o r:::::r              n::::n    n::::n                 S:::::S i::::i d:::::d     d:::::d 
+            S:::::S  t:::::t    ttttttu:::::uuuu:::::u  b:::::b     b:::::bb:::::b     b:::::bo::::o     o::::o r:::::r              n::::n    n::::n                 S:::::S i::::i d:::::d     d:::::d 
+SSSSSSS     S:::::S  t::::::tttt:::::tu:::::::::::::::uub:::::bbbbbb::::::bb:::::bbbbbb::::::bo:::::ooooo:::::o r:::::r              n::::n    n::::n     SSSSSSS     S:::::Si::::::id::::::ddddd::::::dd
+S::::::SSSSSS:::::S  tt::::::::::::::t u:::::::::::::::ub::::::::::::::::b b::::::::::::::::b o:::::::::::::::o r:::::r              n::::n    n::::n     S::::::SSSSSS:::::Si::::::i d:::::::::::::::::d
+S:::::::::::::::SS     tt:::::::::::tt  uu::::::::uu:::ub:::::::::::::::b  b:::::::::::::::b   oo:::::::::::oo  r:::::r              n::::n    n::::n     S:::::::::::::::SS i::::::i  d:::::::::ddd::::d
+ SSSSSSSSSSSSSSS         ttttttttttt      uuuuuuuu  uuuubbbbbbbbbbbbbbbb   bbbbbbbbbbbbbbbb      ooooooooooo    rrrrrrr              nnnnnn    nnnnnn      SSSSSSSSSSSSSSS   iiiiiiii   ddddddddd   ddddd
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+                                                                                                                                                                                                         
+
 """
 
 dec="2"
