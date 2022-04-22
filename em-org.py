@@ -102,7 +102,7 @@ def main_apv():
     print (43*'~')
     print ("\x1b[1;92m[*] \x1b[1;95m For Need Any Help Type 7 And Massage Me On \x1b[1;92mWhatsApp ")
     print (43*'~')
-    input()
+    main_input()
 def main_input():
     mx=input('\x1b[1;92m[!] Select : ')
     if mx=='1':
