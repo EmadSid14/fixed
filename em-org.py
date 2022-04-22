@@ -2,6 +2,7 @@
 # Time Succes decompile : 2022-03-12 17:47:35.910329
 from imp import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
+from tkinter.tix import InputOnly
 from xml.dom import NotFoundErr
 from site import main
 from multiprocessing.pool import ThreadPool
@@ -104,7 +105,7 @@ def main_apv():
     print (43*'~')
     main_input()
 def main_input():
-    mx=input('\x1b[1;92m[!] Select : ')
+    mx=main_input('\x1b[1;92m[!] Select : ')
     print ("")
     if mx=='1':
         print ("")
@@ -176,7 +177,7 @@ def main_input():
     else:
         print ('invild option')
         time.sleep(2)
-        input()
+        main()
 
 
 def numcloning():
