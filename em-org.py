@@ -104,8 +104,8 @@ def main_apv():
     print (43*'~')
     main_input()
 def main_input():
-    mx=raw_input('\x1b[1;92m[!] Select : ')
-    print ("")
+    mx=input('\x1b[1;92m[!] Select : ')
+    print ("mx")
     if mx=='1':
         print ("")
         print('\033[1;94m Checking Subscription ....\033[1;92m')
