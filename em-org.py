@@ -1,6 +1,6 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2022-03-12 17:47:35.910329
-from imp import reload
+from importlib import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
 from xml.dom import NotFoundErr
 from site import main
@@ -84,11 +84,13 @@ def main_apv():
         print (logo)
         print ('')
         print ("Trun On Data An Then \t")
+        print("")
     except:
         print ('\x1b[1;91mToken on Checkpiont ')
         os.system('rm -rf token.txt')
     os.system('clear')
     print (logo)
+    print ("")
     print (39*'~')
     print ("\x1b[1;93m[1]   Public Cloning      \x1b[1;92m(Login)")
     print ("\x1b[1;91m[2]   Random Cloning     \x1b[1;92m (No Login)")
@@ -103,22 +105,32 @@ def main_apv():
     main_input()
 def main_input():
     mx=input('\x1b[1;92m[!] Select : ')
+    print ("")
     if mx=='1':
+        print ("")
         print('\033[1;94m Cheking Subscription ....\033[1;92m')
         time.sleep(3)
         fb_menu()
     elif mx=='2':
+        print ("")
         print('\033[1;94m Cheking Subscription ....\033[1;97m')
         time.sleep(3)
         numcloning()
     elif mx=='3':
+        print ("")
         os.system ('clear')
+        print ("")
+        print ("")
+        print ("")
         print ("        [ File Cloning ]")
+        print ("")
         print (" [ cloning with pass or name + pass ]")
+        print ("")
         print ("[1] Cloning With Choice Pass")
         print ("[2] Cloning With Name + Pass")
         print ("[3] Cloning With Auto Pass")
         print ("[0] Back")
+        print ("")
         c=input("[!] Select : ")
         if c=='1':
             f_p_pass()
@@ -129,12 +141,17 @@ def main_input():
         else:
             main()
     elif mx=='4':
+        print ("")
         print('\033[1;94m Cheking Subscription ....\033[1;97m')
         time.sleep(3)
         grap()
     elif mx=='5':
         os.system ('clear')
         print (logo)
+        print ("")
+        print ("")
+        print ("")
+        print ("")
         print ("        Congratulations Bro Your Pro")
         print ("        Member In RK Paid Commands ")
         print ("        ENJOY  KRO BHI (logo) ")
@@ -147,15 +164,21 @@ def main_input():
         os.system("rm -rf fixed")
         time.sleep(5)
         mx("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
-        time.sleep(2)	
+        time.sleep(2)
+			
+			
     elif mx=='7':
         os.system("xdg-open https://wa.me/+923188214452")
         time.sleep(3)
         main()
+        
+        
     else:
         print ('invild option')
         time.sleep(2)
         main()
+
+
 def numcloning():
     if dec in server:
         pass
@@ -166,9 +189,13 @@ def numcloning():
     oks=[]
     os.system ("clear")
     print (logo)
+    print ("")
     print ("    \033[1;91m\n[ Pakistan Random Number Cloning ]")
-    print ('\033[1;92m\n   [*] Enter First 4 Latter Of Any Network : ')
-    print ("\033[1;93m\n     Example 0300  0345 0320 0303 ")
+    
+    print ("")
+    print ('\033[1;92m\n   [*] Enter First 4 Digits Of Any Network : ')
+    print ("\033[1;93m\n     Example 0300 0345 0320 0303 ")
+    print ("")
     coc=input ('\033[1;95m\nChoice Code :\033[1;93m ')
     try:
         list = '.txt'
@@ -178,9 +205,9 @@ def numcloning():
         print ("File Missing")
         time.sleep (2)
         main()
-    
+    print ("")
     print ("\033[1;93m\n[*] Total Ids : " +str(len(ra)))
-    
+    print ("")
     os.system('echo " ------------------------------------"| lolcat')
     print ("  CRACKING START PLEASE WAIT FOR IDS..   ")
     print ("IF IDS NOT COMMING USE (airplane) FLIGHT MOD")
@@ -270,8 +297,8 @@ def fb_menu():
                 print("")
             except:
                 os.system ('clear')
-                
-                
+                print ("")
+                print ("")
                 print ('\033[1;91m     Your Token Is Expire')
                 time.sleep(3)
                 os.system('rm -rf token.txt')
@@ -291,15 +318,15 @@ def fb_menu():
     print (39*'-')
     cz=input('[!] Select : ')
     if cz=="1":
-        
+        print ("")
         print ("\033[1;91m      [ Public Cloning Pro ]")
-        
+        print ("")
         print (" [\033[1;93m cloning with pass or name + pass ]")
-        
+        print ("")
         print ("\033[1;92m[1] Cloning with password")
         print ("\033[1;92m[2] Cloning with name + pass")
         print ("\033[1;91m[0] Back")
-        
+        print ("")
         c=input("[!] Select : ")
         if c=='1':
             p_p_pass()
@@ -308,16 +335,16 @@ def fb_menu():
         else:
             fb_menu()
     elif cz=="2":
-        
+        print ("")
         print ("\033[1;92m      [ Public Cloning Fast ]")
-        
+        print ("")
         print ("\033[1;92m [ cloning with pass or name + pass ]")
-        
+        print ("")
         print ("\033[1;92m[1] Cloning With Choice Password")
         print ("\033[1;92m[2] Cloning with name + pass")
         print ("\033[1;92m[3] Cloning With Auto Pass")
         print ("\033[1;91m[0] Back")
-        
+        print ("")
         vv=input("\033[1;95m[!] Select :\033[1;92m ")
         if vv=="1":
             xokp()
@@ -330,12 +357,12 @@ def fb_menu():
     elif cz=="v":
         os.system('clear')
         print (logo)
-        
-        
+        print ("")
+        print ("")
         print ("\t     [ File Making ]")
-        
+        print ("")
         print ("\t  [ Maximum Limit 10 IDs ]")
-        
+        print ("")
         c=input("[!] How Many Links Do You Want To Dump : ")
         if c=='1':
             ext1()
@@ -375,7 +402,7 @@ def mineExt():
         fb_menu()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[=] Enter ID : ")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -389,15 +416,15 @@ def mineExt():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[=] Extracting From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (gu+"[=] Graping URLs ......"+w)
-    
+    print ("")
     time.sleep(2)
     print (g+"[=] Graping Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "10000" >> kk.txt')
     os.system(' cat look.txt | grep "1000" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -642,10 +669,10 @@ def mineExt():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
-    
+    print ("")
+    print ("")
     print (sm+"[=] Total Extract ids : "+str(len(count))+w)
-    
+    print ("")
     mvt=input("[=] Enter Path To Save File : ")
     print ("[=] Your File Save in : "+mvt)
     shutil.move(hok,mvt)
@@ -668,7 +695,7 @@ def xokpauto():
         fb_menu()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[=] Enter ID : ")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -682,12 +709,12 @@ def xokpauto():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[=] Transfer From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (g+"[=] Transfer Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "10000" >> kk.txt')
     os.system(' cat look.txt | grep "1000" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -939,7 +966,7 @@ def xokpauto():
     os.system('rm -rf jok.txt')
     os.system('clear')
     print (logo)
-    
+    print ("")
     try:
         for line in open("newlinks.txt",'r').readlines():
             idx.append(line.strip())
@@ -1082,14 +1109,14 @@ def xokp():
         fb_menu()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[1] Enter ID : ")
-    
+    print ("")
     ps1=input('[1] Password : ')
     ps2=input('[2] Password : ')
     ps3=input('[3] Password : ')
     ps4=input('[4] Password : ')
-    
+    print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
     nid=q ['name']
@@ -1102,12 +1129,12 @@ def xokp():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[=] Transfer From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (g+"[=] Transfer Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "10000" >> kk.txt')
     os.system(' cat look.txt | grep "1000" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -1359,7 +1386,7 @@ def xokp():
     os.system('rm -rf jok.txt')
     os.system('clear')
     print (logo)
-    
+    print ("")
     try:
         for line in open("newlinks.txt",'r').readlines():
             idx.append(line.strip())
@@ -1511,14 +1538,14 @@ def xokp():
         fb_menu()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[=] Enter ID : ")
-    
+    print ("")
     ps1=input('[1] Password : ')
     ps2=input('[2] Password : ')
     ps3=input('[3] Password : ')
     ps4=input('[4] Password : ')
-    
+    print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
     nid=q ['name']
@@ -1531,12 +1558,12 @@ def xokp():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[=] Transfer From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (g+"[=] Transfer Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "10000" >> kk.txt')
     os.system(' cat look.txt | grep "1000" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -1788,7 +1815,7 @@ def xokp():
     os.system('rm -rf jok.txt')
     os.system('clear')
     print (logo)
-    
+    print ("")
     try:
         for line in open("newlinks.txt",'r').readlines():
             idx.append(line.strip())
@@ -1937,14 +1964,14 @@ def xoknp():
         fb_menu()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[1] Enter ID : ")
-    
+    print ("")
     ps1=input('[1] name + digit : ')
     ps2=input('[2] name + digit : ')
     ps3=input('[3] name + digit : ')
     ps4=input('[4] last + name  : ')
-    
+    print ("")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
     nid=q ['name']
@@ -1957,12 +1984,12 @@ def xoknp():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[=] Transfer From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (g+"[=] Transfer Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "10000" >> kk.txt')
     os.system(' cat look.txt | grep "1000" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -2214,7 +2241,7 @@ def xoknp():
     os.system('rm -rf jok.txt')
     os.system('clear')
     print (logo)
-    
+    print ("")
     try:
         for line in open("newlinks.txt",'r').readlines():
             idx.append(line.strip())
@@ -2393,12 +2420,12 @@ def n_p_pass():
     token=open('token.txt','r').read()
     os.system('clear')
     print (logo)
-    
+    print ("")
     print (" [ Maximum Limit 5 ]")
-    
+    print ("")
     ty=input('[!] How Many Pass Do You Want To Add : ')
     if ty=="1":
-        
+        print ("")
         ps1=input("[1] Enter digit : ")
         pass
     elif ty=="2":
@@ -2424,13 +2451,13 @@ def n_p_pass():
         ps5=input("[5] Enter digit : ")
     
   
-    
+    print ("")
     print (" [ Maximum Limit 5 ]")
-    
+    print ("")
     ty=input('[!] How Many Links Do You Want To Clone: ')
-    
+    print ("")
     if ty=="1":
-        
+        print ("")
         idt=input("[1] Enter ID : ")
         pass
     elif ty=="2":
@@ -2616,7 +2643,7 @@ def n_p_pass():
     token=open('token.txt','r').read()
     os.system('clear')
     print (logo)
-    
+    print ("")
     ps1=input('[1] name + digit : ')
     ps2=input('[2] name + digit : ')
     ps3=input('[4] name + digit : ')
@@ -2632,13 +2659,13 @@ def p_p_pass():
     token=open('token.txt','r').read()
     os.system('clear')
     print (logo)
-    
+    print ("")
     print (" [ Maximum Limit 5 ]")
-    
+    print ("")
     ty=input('[!] How Many Pass Do You Want To Add: ')
-    
+    print ("")
     if ty=="1":
-        
+        print ("")
         ps1=input("[1] Enter Pass : ")
         pass
     elif ty=="2":
@@ -2662,14 +2689,14 @@ def p_p_pass():
         ps1=input("[3] Enter Pass : ")
         ps1=input("[4] Enter Pass : ")
         ps1=input("[5] Enter Pass : ")
-    
+    print ("")
     print (" [ Maximum Limit5 ]")
     
-    
+    print ("")
     ty=input('[!] How Many Links Do You Want To Clone : ')
-    
+    print ("")
     if ty=="1":
-        
+        print ("")
         idt=input("[1] Enter ID : ")
         pass
     elif ty=="2":
@@ -2830,12 +2857,12 @@ def p_p_pass():
 def grap():
         os.system('clear')
         print (logo)
-        
-        
+        print ("")
+        print ("")
         print ("\t     [ File Making ]")
-        
+        print ("")
         print ("\t  [ Maximum Limit 10 IDs ]")
-        
+        print ("")
         c=input("[!] How Many Links Do You Want To Dump : ")
         if c=='1':
             ext1()
@@ -2874,7 +2901,7 @@ def mineExt():
         main()
     os.system('clear')
     print (logo)
-    
+    print ("")
     iiid=input("[*] Enter ID : ")
     rrp=requests.get ("https://graph.facebook.com/"+iiid+"?access_token="+token)
     q=json.loads(rrp.text)
@@ -2888,15 +2915,15 @@ def mineExt():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
+    print ("")
     print (sm+"[*] Extracting From : "+nid+" > \x1b[1;91mFriends")
-    
+    print ("")
     time.sleep(2)
     print (gu+"[*] Graping URLs ......"+w)
-    
+    print ("")
     time.sleep(2)
     print (g+"[*] Graping Complte Process Start *"+w)
-    
+    print ("")
     os.system(' cat look.txt | grep "100077" >> kk.txt')
     os.system(' cat look.txt | grep "100078" >> kk.txt')
     os.system('rm -rf look.txt')
@@ -3141,10 +3168,10 @@ def mineExt():
         rana.append(uid + '|' + na)
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
-    
-    
+    print ("")
+    print ("")
     print (sm+"[*] Total Extract ids : "+str(len(count))+w)
-    
+    print ("")
     mvt=input("[=] Enter Path To Save File : ")
     print ("[*] Your File Save in : "+mvt)
     shutil.move(hok,mvt)
@@ -3162,7 +3189,7 @@ def ext1():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
         
     r = requests.get('https://graph.facebook.com/' + d1 + '/friends?access_token=' + token)
@@ -3187,7 +3214,7 @@ def ext2():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
         
@@ -3222,7 +3249,7 @@ def ext3():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3267,7 +3294,7 @@ def ext4():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3321,7 +3348,7 @@ def ext5():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3385,7 +3412,7 @@ def ext6():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3460,7 +3487,7 @@ def ext7():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3545,7 +3572,7 @@ def ext8():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3640,7 +3667,7 @@ def ext9():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3745,7 +3772,7 @@ def ext10():
         token=open('token.txt').read()
     except:
         main()
-    
+    print ("")
     d1=input('[1] Enter ID : ')
     d2=input('[2] Enter ID : ')
     d3=input('[3] Enter ID : ')
@@ -3861,8 +3888,8 @@ def ext10():
 def fileauto():
     os.system('clear')
     print (logo)
-    
-    
+    print ("")
+    print ("")
     try:
         mf=input('[!] Enter path : ')
         print ('')
@@ -4011,12 +4038,12 @@ def fileauto():
 def n_f_p_pass():
     os.system('clear')
     print (logo)
-    
+    print ("")
     ps1=input('[1] name + digit : ')
     ps2=input('[2] name + digit : ')
     ps3=input('[3] name + digit : ')
     ps4=input('[4] name + digit : ')
-    
+    print ("")
     try:
         mf=input('[!] Enter path : ')
         print ('')
@@ -4165,14 +4192,14 @@ def n_f_p_pass():
 def f_p_pass():
     os.system('clear')
     print (logo)
-    
+    print ("")
     ps1=input('[1] Password : ')
     ps2=input('[2] Password : ')
     ps3=input('[3] Password : ')
     ps4=input('[4] Password : ')
     ps5=input('[5] Password : ')
     ps6=input('[6] Password : ')
-    
+    print ("")
     try:
         mf=input('[!] Enter path :')
         print ('')
