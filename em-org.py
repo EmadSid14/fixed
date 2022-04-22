@@ -105,7 +105,7 @@ def main_apv():
     main_input()
 def main_input():
     mx=input('\x1b[1;92m[!] Select : ')
-    print ("mx")
+    print ("")
     if mx=='1':
         print ("")
         print('\033[1;94m Checking Subscription ....\033[1;92m')
@@ -176,7 +176,7 @@ def main_input():
     else:
         print ('invild option')
         time.sleep(2)
-        main()
+        input()
 
 
 def numcloning():
