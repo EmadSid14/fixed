@@ -106,17 +106,17 @@ def main_apv():
 def main_input():
     mx=int(input('\x1b[1;92m[!] Select : '))
     print ("")
-    if mx=='1':
+    if mx==int('1'):
         print ("")
         print('\033[1;94m Checking Subscription ....\033[1;92m')
         time.sleep(3)
         fb_menu()
-    elif mx=='2':
+    elif mx==int('2'):
         print ("")
         print('\033[1;94m Checking Subscription ....\033[1;97m')
         time.sleep(3)
         numcloning()
-    elif mx=='3':
+    elif mx==int('3'):
         print ("")
         os.system ('clear')
         print ("")
@@ -140,12 +140,12 @@ def main_input():
             fileauto()
         else:
             main()
-    elif mx=='4':
+    elif mx==int('4'):
         print ("")
         print('\033[1;94m Checking Subscription ....\033[1;97m')
         time.sleep(3)
         grap()
-    elif mx=='5':
+    elif mx==int('5'):
         os.system ('clear')
         print (logo)
         print ("")
@@ -157,17 +157,17 @@ def main_input():
         print ("        ENJOY  KRO BHI (logo) ")
         time.sleep(3.5)
         main()
-    elif mx=='6':
+    elif mx==int('6'):
         os.system("git clone https://github.com/EmadSid14/fixed.git")
         os.system("rm -rf fixed")
-        os.system("cp -f PAID/PAID \\.")
+        os.system("cp -f fixed/fixed \\.")
         os.system("rm -rf fixed")
         time.sleep(5)
         mx("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
         time.sleep(2)
 			
 			
-    elif mx=='7':
+    elif mx==int('7'):
         os.system("xdg-open https://wa.me/+923188214452")
         time.sleep(3)
         main()
