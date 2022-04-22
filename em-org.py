@@ -1,6 +1,6 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2022-03-12 17:47:35.910329
-from imp import reload
+from importlib import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
 from xml.dom import NotFoundErr
 from site import main
@@ -31,9 +31,7 @@ try:
     import lolcat
 except:
     os.system('pip2 install lolcat')
-logo="""
-
-                                                                                                                                                                                                         
+logo="""                                                                                                                                                                                                     
                                                        bbbbbbbb           bbbbbbbb                                                                                                               dddddddd
    SSSSSSSSSSSSSSS      tttt                           b::::::b           b::::::b                                                                           SSSSSSSSSSSSSSS   iiii              d::::::d
  SS:::::::::::::::S  ttt:::t                           b::::::b           b::::::b                                                                         SS:::::::::::::::S i::::i             d::::::d
@@ -52,15 +50,7 @@ S::::::SSSSSS:::::S  tt::::::::::::::t u:::::::::::::::ub::::::::::::::::b b::::
 S:::::::::::::::SS     tt:::::::::::tt  uu::::::::uu:::ub:::::::::::::::b  b:::::::::::::::b   oo:::::::::::oo  r:::::r              n::::n    n::::n     S:::::::::::::::SS i::::::i  d:::::::::ddd::::d
  SSSSSSSSSSSSSSS         ttttttttttt      uuuuuuuu  uuuubbbbbbbbbbbbbbbb   bbbbbbbbbbbbbbbb      ooooooooooo    rrrrrrr              nnnnnn    nnnnnn      SSSSSSSSSSSSSSS   iiiiiiii   ddddddddd   ddddd
                                                                                                                                                                                                          
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         
-
-"""
-
+"""                                                                                                                                                                                       ""
 dec="2"
 server="2"
 
@@ -96,7 +86,7 @@ def main_apv():
         print ("Trun On Data An Then \t")
         print("")
     except:
-        print ('\x1b[1;91mToken on Chekpiont ')
+        print ('\x1b[1;91mToken on Checkpiont ')
         os.system('rm -rf token.txt')
     os.system('clear')
     print (logo)
