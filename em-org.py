@@ -106,7 +106,7 @@ def main_apv():
 def main_input():
     mx=input('\x1b[1;92m[!] Select : ')
     if mx=='1':
-        print ("1")
+        print ("mx==1")
         print('\033[1;94m Cheking Subscription ....\033[1;92m')
         time.sleep(3)
         fb_menu()
