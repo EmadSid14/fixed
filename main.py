@@ -283,7 +283,7 @@ def fb_menu():
             j.write(str(token))
             j.close()
             try:
-                r=requests.get('https://graph.facebook.com/me?access_token=' + tok)
+                r=requests.get('https://graph.facebook.com/me?access_token=' + token)
                 q=json.loads(r.text)
                 m=q['name']
                 print ('')
@@ -354,7 +354,7 @@ def fb_menu():
             xokpauto()
         else:
             fb_menu()
-    elif cz==int("v"):
+    elif cz==int("vv"):
         os.system('clear')
         print (logo)
         print ("")
