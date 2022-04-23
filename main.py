@@ -132,11 +132,11 @@ def main_input():
         print ("[0] Back")
         print ("")
         c=int(input("[!] Select : "))
-        if c=='1':
+        if c==int('1'):
             f_p_pass()
-        elif c=='2':
+        elif c==int('2'):
             n_f_p_pass()
-        elif c=="3":
+        elif c==int("3"):
             fileauto()
         else:
             main()
