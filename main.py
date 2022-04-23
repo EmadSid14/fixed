@@ -2863,26 +2863,26 @@ def grap():
         print ("")
         print ("\t  [ Maximum Limit 10 IDs ]")
         print ("")
-        c=input("[!] How Many Links Do You Want To Dump : ")
-        if c=='1':
+        c=int(input("[!] How Many Links Do You Want To Dump : "))
+        if c==int('1'):
             ext1()
-        elif c=='2':
+        elif c==int('2'):
             ext2()
-        elif c=='3':
+        elif c==int('3'):
             ext3()
-        elif c=='4':
+        elif c==int('4'):
             ext4()
-        elif c=='5':
+        elif c==int('5'):
             ext5()
-        elif c=='6':
+        elif c==int('6'):
             ext6()
-        elif c=='7':
+        elif c==int('7'):
             ext7()
-        elif c=='8':
+        elif c==int('8'):
             ext8()
-        elif c=='9':
+        elif c==int('9'):
             ext9()
-        elif c=='10':
+        elif c==int('10'):
             ext10()
           
         else:
