@@ -317,7 +317,7 @@ def fb_menu():
     print ("\033[1;91m[0] Back ")
     print (39*'-')
     cz=int(input('[!] Select : '))
-    if cz=="1":
+    if cz==int("1"):
         print ("")
         print ("\033[1;91m      [ Public Cloning Pro ]")
         print ("")
