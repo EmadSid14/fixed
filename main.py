@@ -278,7 +278,7 @@ def fb_menu():
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
+            tok=raw_input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
             j=open('token.txt','w')
             j.write(tok)
             j.close()
@@ -293,7 +293,7 @@ def fb_menu():
             except requests.exceptions.ConnectionError:
                 print (logo)
                 print ('')
-                print ("Trun On Data An Then \t")
+                print ("Turn On Data An Then \t")
                 print("")
             except:
                 os.system ('clear')
