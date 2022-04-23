@@ -131,7 +131,7 @@ def main_input():
         print ("[3] Cloning With Auto Pass")
         print ("[0] Back")
         print ("")
-        c=eval(input("[!] Select : "))
+        c=int(input("[!] Select : "))
         if c=='1':
             f_p_pass()
         elif c=='2':
@@ -327,7 +327,7 @@ def fb_menu():
         print ("\033[1;92m[2] Cloning with name + pass")
         print ("\033[1;91m[0] Back")
         print ("")
-        c=eval(input("[!] Select : "))
+        c=int(input("[!] Select : "))
         if c=='1':
             p_p_pass()
         elif c=='2':
