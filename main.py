@@ -2456,7 +2456,7 @@ def n_p_pass():
     print ("")
     ty=int(input('[!] How Many Links Do You Want To Clone: '))
     print ("")
-    if ty=="1":
+    if ty==int=="1":
         print ("")
         idt=int(input("[1] Enter ID : "))
         pass
@@ -2664,26 +2664,26 @@ def p_p_pass():
     print ("")
     ty=int(input('[!] How Many Pass Do You Want To Add: '))
     print ("")
-    if ty=="1":
+    if ty==int("1"):
         print ("")
         ps1=int(input("[1] Enter Pass : "))
         pass
-    elif ty=="2":
+    elif ty==int("2"):
         ps1=int(input("[1] Enter Pass : "))
         ps1=input("[2] Enter Pass : ")
         pass
-    elif ty=="3":
+    elif ty==int("3"):
         ps1=input("[1] Enter Pass : ")
         ps1=input("[2] Enter Pass : ")
         ps1=input("[3] Enter Pass : ")
         pass
-    elif ty=="4":
+    elif ty==int("4"):
         ps1=input("[1] Enter Pass : ")
         ps1=input("[2] Enter Pass : ")
         ps1=input("[3] Enter Pass : ")
         ps1=input("[4] Enter Pass : ")
         pass
-    elif ty=="5":
+    elif ty==int("5"):
         ps1=input("[1] Enter Pass : ")
         ps1=input("[2] Enter Pass : ")
         ps1=input("[3] Enter Pass : ")
