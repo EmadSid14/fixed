@@ -328,13 +328,13 @@ def fb_menu():
         print ("\033[1;91m[0] Back")
         print ("")
         c=int(input("[!] Select : "))
-        if c=='1':
+        if c==int('1'):
             p_p_pass()
-        elif c=='2':
+        elif c==int('2'):
             n_p_pass()
         else:
             fb_menu()
-    elif cz=="2":
+    elif cz==int("2"):
         print ("")
         print ("\033[1;92m      [ Public Cloning Fast ]")
         print ("")
@@ -346,15 +346,15 @@ def fb_menu():
         print ("\033[1;91m[0] Back")
         print ("")
         vv=eval(input("\033[1;95m[!] Select :\033[1;92m "))
-        if vv=="1":
+        if vv==int("1"):
             xokp()
-        elif vv=="2":
+        elif vv==int("2"):
             xoknp()
-        elif vv=="3":
+        elif vv==int("3"):
             xokpauto()
         else:
             fb_menu()
-    elif cz=="v":
+    elif cz==int("v"):
         os.system('clear')
         print (logo)
         print ("")
@@ -364,25 +364,25 @@ def fb_menu():
         print ("\t  [ Maximum Limit 10 IDs ]")
         print ("")
         c=int(input("[!] How Many Links Do You Want To Dump : "))
-        if c=='1':
+        if c==int('1'):
             ext1()
-        elif c=='2':
+        elif c==int('2'):
             ext2()
-        elif c=='3':
+        elif c==int('3'):
             ext3()
-        elif c=='4':
+        elif c==int('4'):
             ext4()
-        elif c=='5':
+        elif c==int('5'):
             ext5()
-        elif c=='6':
+        elif c==int('6'):
             ext6()
-        elif c=='7':
+        elif c==int('7'):
             ext7()
-        elif c=='8':
+        elif c==int('8'):
             ext8()
-        elif c=='9':
+        elif c==int('9'):
             ext9()
-        elif c=='10':
+        elif c==int('10'):
             ext10()
         else:
             fb_menu()
