@@ -4352,7 +4352,7 @@ def f_p_pass():
     print ("[!] Cloning Complete Result ........")
     print (39*'-')
     print ('[!] Total OK IDS : '+str(len(oks)))
-    print ('[!] Total CP IDS:'+str(len(cps)))
+    print ('[!] Total CP IDS :'+str(len(cps)))
     print (39*'-')
     print ('')
     input(' Press Enter To Back ')
