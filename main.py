@@ -354,7 +354,7 @@ def fb_menu():
             xokpauto()
         else:
             fb_menu()
-    elif cz==int("vv"):
+    elif cz==str(("vv")):
         os.system('clear')
         print (logo)
         print ("")
