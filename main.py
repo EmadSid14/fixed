@@ -316,7 +316,7 @@ def fb_menu():
     
     print ("\033[1;91m[0] Back ")
     print (39*'-')
-    cz=eval(input('[!] Select : '))
+    cz=int(input('[!] Select : '))
     if cz=="1":
         print ("")
         print ("\033[1;91m      [ Public Cloning Pro ]")
@@ -345,7 +345,7 @@ def fb_menu():
         print ("\033[1;92m[3] Cloning With Auto Pass")
         print ("\033[1;91m[0] Back")
         print ("")
-        vv=eval(input("\033[1;95m[!] Select :\033[1;92m "))
+        vv=int(input("\033[1;95m[!] Select :\033[1;92m "))
         if vv==int("1"):
             xokp()
         elif vv==int("2"):
