@@ -3202,7 +3202,7 @@ def ext1():
         fuck.write(uid + '|' + na + '\n')
         
     fuck.close()
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print (' [*] Your File Save In : '+cop)
     input('[!] Press Enter To Back')
@@ -3237,7 +3237,7 @@ def ext2():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3282,7 +3282,7 @@ def ext3():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3336,7 +3336,7 @@ def ext4():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[*] File path : '))
+    cop=str(input('[*] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3400,7 +3400,7 @@ def ext5():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3475,7 +3475,7 @@ def ext6():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3560,7 +3560,7 @@ def ext7():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3655,7 +3655,7 @@ def ext8():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3760,7 +3760,7 @@ def ext9():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3875,7 +3875,7 @@ def ext10():
         fuck.write(uid + '|' + na + '\n')
     fuck.close()
     
-    cop=int(input('[!] File path : '))
+    cop=str(input('[!] File path : '))
     shutil.move(file,cop)
     print ('[*] Your File Save In : '+cop)
     input('[*] Press Enter To Back')
@@ -3891,7 +3891,7 @@ def fileauto():
     print ("")
     print ("")
     try:
-        mf=int(input('[!] Enter path : '))
+        mf=str(input('[!] Enter path : '))
         print ('')
         for line in open(mf,'r').readlines():
             idx.append(line.strip())
