@@ -386,7 +386,7 @@ def fb_menu():
             ext10()
         else:
             fb_menu()
-    elif cz=="4":
+    elif cz==int("4"):
         mineExt()
     else:
         main()
