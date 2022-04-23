@@ -280,7 +280,7 @@ def fb_menu():
             print ('')
             tok=int(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
             j=open('token.txt','w')
-            j.write(int(tok))
+            j.write(str(tok))
             j.close()
             try:
                 r=requests.get('https://graph.facebook.com/me?access_token=' + token)
