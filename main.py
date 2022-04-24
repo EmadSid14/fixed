@@ -2,6 +2,7 @@
 # Time Succes decompile : 2022-03-12 17:47:35.910329
 from imp import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
+from wsgiref.types import InputStream
 from xml.dom import NotFoundErr
 from site import main
 from multiprocessing.pool import ThreadPool
@@ -278,8 +279,8 @@ def fb_menu():
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
-            j=open('token.txt','w')
+            tok=str(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
+            j=open('EAABsbCS1iHgBALCgB2jhkhqPhbtU6qh6RGze7PWJPnTZCv3PqhiMjAPHEN0ZAzol58HXMfjXzLI1Je7ENf1FZCClSXVpC6xjZAKczvRP6oaDuKExqGqVIdZAXynaI6IIF82t4hurasNeDqlxpavdKuzXbA2ZBQJ5yYK6ZAWQq5lNjw4VbgshMr2Lirl29Pr0qMZD','w')
             j.write(tok)
             j.close()
             try:
@@ -317,7 +318,6 @@ def fb_menu():
     print ("\033[1;91m[0] Back ")
     print (39*'-')
     cz=int(input('[!] Select : '))
-    print("cz")
     if cz==int("1"):
         print ("")
         print ("\033[1;91m      [ Public Cloning Pro ]")
